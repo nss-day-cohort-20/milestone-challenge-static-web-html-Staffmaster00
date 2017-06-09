@@ -55,7 +55,7 @@ let blogArray = [blogCard1, blogCard2, blogCard3]; //Holds Blogs and uses functi
 //Gonna have to work on all this.
 let blogClass = document.getElementById("blogPosts");// Where the blogs go when put in printBlog
 function printBlog(blogArray, blogClass){//seems like I should put the result from array blog in here or just the function itself
-	for(i = 0; i <= blogArray.length; i++) {// or just make it print the cards and have arrayblog create the array
+	for(i = 0; i < blogArray.length; i++) {// or just make it print the cards and have arrayblog create the array
 		  blogClass.innerHTML += blogArray[i];
 		  
 
@@ -96,6 +96,7 @@ printBlog(blogArray, blogClass);
 //test function createBlogObj
 // let mynewblog = createBlogObj("sampletitle","sampledate","samplecontent");
 // console.log("createBlogObj test", mynewblog);
-
-
+//********************************************
+//Thoughts
+// the I counter for printBlog was causing an undefined when it couldn't find an array.
 

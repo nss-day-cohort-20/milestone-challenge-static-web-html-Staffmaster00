@@ -19,7 +19,13 @@
 #blogPosts{
 
 }
-.blog{
+.blog h3{
+	text-align: center;
+	border: solid;
+	max-width: 150px;
+	min-height: 30px;
+	background-image: url('../images/CheckeredFlag.jpg')
+	
 
 }
 .day{
