@@ -1,4 +1,5 @@
 /*Follows HTML skeleton*/
+/*Try not to use the IDs according to Joe and Greg*/
 /*body*/
 #personalPhoto{
 
@@ -21,7 +22,10 @@
 .blog{
 
 }
+.day{
+	
+}
 /*footer*/
-#socialM{
+.socialM{
 
 }
