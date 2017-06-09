@@ -79,7 +79,7 @@ function createContentBlog(blogObject){// pass in the created blog from createBl
 					<div class = "blogheader">
 										<h3>${blogObject.title}</h3><p class = "day"> -${blogObject.date}</p>
 					</div>
-										<p>${blogObject.copy}</p>
+										<p class="content">${blogObject.copy}</p>
 
 				</article>
 				<br>`
