@@ -33,11 +33,15 @@ let blog1Content = `Just starting at Nashville Software School! I hope everythin
 let blog2Content = `We are entering the Valley of Despair pit as they call it, the slight valley before the real struggle begins. I don't
 					feel too bad so far, it takes a day or two to grasp something then I can throw together some code and get help when it
 					doesn't work. Each time I get help I learn a little more and it all adds up.`;
-let	blog3Content = `-coming soon-`;
+let	blog3Content = `This week definately tested us all, the new concepts we learned have definately expanded our horizons. After playing Pinball
+					with functions I finally have a function group that can help me make these blogs! I also did the tree milestone challenge and 
+					just have this HTML one left. Fortunately with this JavaScript updating my blog will be much easier, as the dry code allows me
+					to simply type this page, create a variable for it and run the content through a function chain that requires little effort!
+					Function Pinball is probably the best way to describe week three at NSS.`;
 // Blogs created
 let blogOne = createBlogObj("Starting NSS", "5, 22, 17", blog1Content);
-let blogTwo = createBlogObj("The Storm before the Hurricane", "6, 1, 17", blog2Content);
-let blogThree = createBlogObj("coming soon", "TBD", blog3Content);
+let blogTwo = createBlogObj("The Storm before the Hurricane", "5, 29, 17", blog2Content);
+let blogThree = createBlogObj("Function Pinball", "6, 5, 17", blog3Content);
 // Blog Cards
 let blogCard1 = createContentBlog(blogOne);
 let blogCard2 = createContentBlog(blogTwo);
