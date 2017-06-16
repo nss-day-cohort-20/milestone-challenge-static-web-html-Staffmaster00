@@ -1,46 +1,65 @@
 /*Follows HTML skeleton*/
-/*Try not to use the IDs according to Joe and Greg*/
+
+
+/*Try not to use the IDs unless javascript according to Joe and Greg*/
+
+
 /*body*/
+
 h1 {
-	text-align: center;
-	color:mintcream;
-	margin-left: auto;
-	margin-right: auto;
-	
+    text-align: center;
+    color: mintcream;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 body {
-	background-image: url(../images/AuroraBorealis.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-image: url(../images/AuroraBorealis.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#personalPhoto{
 
+.personalPhoto {
+    border: solid;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
-#bio{
 
+.bio {
+    color: mintcream;
 }
-#siteSources{
-	border: solid;
-	border-color: lavender;
-	background-color: antiquewhite;
+
+.bio header, h2 {
+    text-align: center;
 }
-#futureProjects{
-	color: mintcream;
+
+.siteSources {
+    border: solid;
+    border-radius: 4%;
+    border-color: lavender;
+    background-color: antiquewhite;
 }
-.future{
-	object-fit: contain;
+
+.futureProjects {
+    color: mintcream;
 }
-#blogPosts{
-	border:solid;
-	border-radius: 5%;
-	background-image: url(../images/futureBuilding.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	
+
+.future {
+    object-fit: contain;
 }
-.blog h3{
-	text-align: -webkit-center;
+
+#blogPosts {
+    /*Targeted by JavaScript*/
+    border: solid;
+    border-radius: 5%;
+    background-image: url(../images/futureBuilding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog h3 {
+    text-align: -webkit-center;
     border: solid;
     border-color: royalblue;
     max-width: 264px;
@@ -52,30 +71,38 @@ body {
     color: aliceblue;
     background-image: url(../images/GrandCanyon.jpg);
 }
-.content{
-	text-align: -webkit-center;
-	color: darkblue;
-	background-color: antiquewhite;
-	border: solid;
-	border-radius: 50%;
-	border-color: black;
-	padding: 35px;
 
+.content {
+    text-align: -webkit-center;
+    color: darkblue;
+    background-color: antiquewhite;
+    border: solid;
+    border-radius: 15%;
+    border-color: black;
+    padding: 35px;
 }
-.day{
-	text-align: -webkit-center;
-	border: solid;
-	border-color: black;
-	max-width: 70px;
-	min-height: 15px;
-	border-radius: 50%;
-	padding: 5px;
-	margin-right: auto;
-	margin-left: auto;
-	color: mediumseagreen;
-	background-image: url(../images/CheckeredFlag.jpg);
+
+.day {
+    text-align: -webkit-center;
+    border: solid;
+    border-color: black;
+    max-width: 70px;
+    min-height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    color: mediumseagreen;
+    background-image: url(../images/CheckeredFlag.jpg);
 }
+
+
 /*footer*/
-.socialM{
 
+.socialM {
+    text-align: -webkit-center;
+    background-color: antiquewhite;
+    border: solid;
+    border-radius: 50%;
+    border-color: black;
 }

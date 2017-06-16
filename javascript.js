@@ -1,8 +1,8 @@
 // The page will have a linked JavaScript file for the blog posts
- // section. Create an array to hold your posts (at least 2 posts).
-  // Each item in the array must be an object that contains at a
-   // minimum the following information: Title, Copy, Date.
-    // Use JavaScript to add each post to the DOM.
+// section. Create an array to hold your posts (at least 2 posts).
+// Each item in the array must be an object that contains at a
+// minimum the following information: Title, Copy, Date.
+// Use JavaScript to add each post to the DOM.
 // let blogArray = [];
 // const blogOne = {
 // 	Title: "Starting Out"
@@ -33,7 +33,7 @@ let blog1Content = `Just starting at Nashville Software School! I hope everythin
 let blog2Content = `We are entering the Valley of Despair pit as they call it, the slight valley before the real struggle begins. I don't
 					feel too bad so far, it takes a day or two to grasp something then I can throw together some code and get help when it
 					doesn't work. Each time I get help I learn a little more and it all adds up.`;
-let	blog3Content = `This week definately tested us all, the new concepts we learned have definately expanded our horizons. After playing Pinball
+let blog3Content = `This week definately tested us all, the new concepts we learned have definately expanded our horizons. After playing Pinball
 					with functions I finally have a function group that can help me make these blogs! I also did the tree milestone challenge and 
 					just have this HTML one left. Fortunately with this JavaScript updating my blog will be much easier, as the dry code allows me
 					to simply type this page, create a variable for it and run the content through a function chain that requires little effort!
@@ -57,29 +57,29 @@ let blogArray = [blogCard1, blogCard2, blogCard3]; //Holds Blogs and uses functi
 // 	return blogArray;
 // };
 //Gonna have to work on all this.
-let blogClass = document.getElementById("blogPosts");// Where the blogs go when put in printBlog
-function printBlog(blogArray, blogClass){//seems like I should put the result from array blog in here or just the function itself
-	for(i = 0; i < blogArray.length; i++) {// or just make it print the cards and have arrayblog create the array
-		  blogClass.innerHTML += blogArray[i];
-		  
+let blogClass = document.getElementById("blogPosts"); // Where the blogs go when put in printBlog
+function printBlog(blogArray, blogClass) { //seems like I should put the result from array blog in here or just the function itself
+    for (i = 0; i < blogArray.length; i++) { // or just make it print the cards and have arrayblog create the array
+        blogClass.innerHTML += blogArray[i];
 
-	}
-	//console.log("pringBlog Running?", blogClass);
-	//change to append child w/e convenient and make this print cards.
+
+    }
+    //console.log("pringBlog Running?", blogClass);
+    //change to append child w/e convenient and make this print cards.
 };
 
-function createBlogObj(title, date, copy){// put createContentBlog result into copy
-// pass variables created by other functions
-	let newBlog = Object.create(null);
-	newBlog.title = title;
-	newBlog.date = date;
-	newBlog.copy = copy;
-	return newBlog;//creates blog format
-	//console.log("createBlogObj running?", newBlog);
+function createBlogObj(title, date, copy) { // put createContentBlog result into copy
+    // pass variables created by other functions
+    let newBlog = Object.create(null);
+    newBlog.title = title;
+    newBlog.date = date;
+    newBlog.copy = copy;
+    return newBlog; //creates blog format
+    //console.log("createBlogObj running?", newBlog);
 };
 
-function createContentBlog(blogObject){// pass in the created blog from createBlog Obj result
-	let card = `<article class = "blog">
+function createContentBlog(blogObject) { // pass in the created blog from createBlog Obj result
+    let card = `<article class = "blog">
 					<div class = "blogheader">
 										<h3>${blogObject.title}</h3><p class = "day"> -${blogObject.date}</p>
 					</div>
@@ -87,10 +87,10 @@ function createContentBlog(blogObject){// pass in the created blog from createBl
 
 				</article>
 				<br>`
-	// could be useful to create a consistent styles 
-	// and save time doing html
-	//console.log("createContentBlog running?", card);
-	return card;
+        // could be useful to create a consistent styles 
+        // and save time doing html
+        //console.log("createContentBlog running?", card);
+    return card;
 };
 
 printBlog(blogArray, blogClass);
@@ -103,4 +103,3 @@ printBlog(blogArray, blogClass);
 //********************************************
 //Thoughts
 // the I counter for printBlog was causing an undefined when it couldn't find an array.
-
